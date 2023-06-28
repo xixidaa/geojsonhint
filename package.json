@@ -1,7 +1,7 @@
 {
   "name": "geojsonhintesm",
   "description": "validate and sanity-check geojson files",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Tom MacWright",
   "bin": {
     "geojsonhint": "./bin/geojsonhint"
