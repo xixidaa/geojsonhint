@@ -1,7 +1,7 @@
 {
-  "name": "@mapbox/geojsonhint",
+  "name": "geojsonhintesm",
   "description": "validate and sanity-check geojson files",
-  "version": "3.1.1",
+  "version": "1.0.4",
   "author": "Tom MacWright",
   "bin": {
     "geojsonhint": "./bin/geojsonhint"
@@ -11,6 +11,7 @@
   },
   "files": [
     "geojsonhint.js",
+    "geojsonhint.esm.js",
     "bin",
     "lib"
   ],
@@ -37,13 +38,13 @@
     "hint"
   ],
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "./geojsonhint.esm.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/geojsonhint.git"
+    "url": "git@github.com:xixidaa/geojsonhint.git"
   },
   "scripts": {
     "test": "eslint . && tap test/*.js --coverage",
-    "prepublish": "browserify . --standalone geojsonhint > geojsonhint.js"
+    "prepublish": "browserify . --standalone geojsonhint > geojsonhint.js && rollup -c"
   }
 }
